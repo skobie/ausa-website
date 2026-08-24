@@ -7,59 +7,71 @@ import './BoardAndCommittees.css';
 
 const boardMembers = [
   {
-    name: 'Heather Legg',
-    role: 'Board Chair',
-    organization: 'Salt River Project',
-    email: 'heather.legg@srpnet.com',
-  },
-  {
     name: 'Christine Ries',
-    role: 'Board Member',
+    role: 'President',
     organization: 'Salt River Project',
     email: 'christine.ries@srpnet.com',
+    image: '/Chris Ries.avif',
   },
   {
     name: 'Mike Mitts',
-    role: 'Board Member',
+    role: 'Co-President',
     organization: 'Tucson Electric Power',
     email: 'mmitts@tep.com',
+    image: '/mike mitts.avif',
+    imageStyle: { objectFit: 'contain', backgroundColor: '#9a9a9a', objectPosition: 'center' },
   },
   {
-    name: 'Diana Urrea',
-    role: 'Board Member',
-    organization: 'Tucson Electric Power',
+    name: 'Heather Legg',
+    role: 'Vice President',
+    organization: 'Salt River Project',
+    email: 'heather.legg@srpnet.com',
+    image: '/Heather Legg.avif',
   },
   {
-    name: 'Jim Neal',
-    role: 'Board Member',
+    name: 'Mark Roll',
+    role: 'Treasurer',
+    organization: 'Sulphur Springs Valley Electric Cooperative',
+    image: '/Mark Roll.avif',
+  },
+  {
+    name: 'Edwin (Ely) Yingling',
+    role: 'Secretary',
     organization: 'Arizona Public Service',
+    image: '/Ely Yingling.avif',
   },
 ];
 
 const committees = [
   {
-    icon: <Home size={24} />,
-    title: 'Host Committee',
+    icon: <Store size={24} />,
+    title: 'Vendor Committee',
     description:
-      'Responsible for coordinating all logistics for the annual AUSA Conference & Vendor Expo, including venue, catering, registration, and attendee experience.',
-  },
-  {
-    icon: <Shield size={24} />,
-    title: 'Safety Roundtable Committee',
-    description:
-      'Organizes quarterly safety roundtable meetings where utility safety professionals gather to share best practices, incident reviews, and innovative safety solutions.',
+      'Manages vendor relationships, booth assignments, and the vendor expo portion of the annual conference, connecting utilities with industry suppliers.',
+    chair: 'Steve Winden, McAvoy-Markham',
+    volunteers: 'Brian Stahovich, Gary Andrew, Clark Power Products',
   },
   {
     icon: <Presentation size={24} />,
     title: 'Presentation Committee',
     description:
       'Curates and coordinates speakers, presentations, and educational content for the annual conference and other AUSA events throughout the year.',
+    chair: 'Ryan Hyatt, Salt River Project',
   },
   {
-    icon: <Store size={24} />,
-    title: 'Vendor Committee',
+    icon: <Home size={24} />,
+    title: 'Host Committee',
     description:
-      'Manages vendor relationships, booth assignments, and the vendor expo portion of the annual conference, connecting utilities with industry suppliers.',
+      'Responsible for coordinating all logistics for the annual AUSA Conference & Vendor Expo, including venue, catering, registration, and attendee experience.',
+    chair: 'Ralph Gallegos, Tucson Electric Power',
+    volunteers: 'LaVerne Steah, Salt River Project',
+  },
+  {
+    icon: <Shield size={24} />,
+    title: 'Safety Roundtable Committee',
+    description:
+      'Organizes the annual safety roundtable meeting where utility safety professionals gather to share best practices, incident reviews, and innovative safety solutions.',
+    chair: 'Clint Bragg, Salt River Project & Frank Sisty, IBEW Local 769',
   },
 ];
 
@@ -107,6 +119,23 @@ export default function BoardAndCommittees() {
         </div>
       </section>
 
+      {/* Board Group Photo */}
+      <section className="board-group-photo">
+        <div className="container container-wide">
+          <ScrollReveal>
+            <div className="board-group-photo-inner">
+              <img
+                src="/refwausalink/AUSA Board and Presentation Manny, Committee Chair.jpg"
+                alt="AUSA Board of Directors at the Annual Conference"
+              />
+              <div className="board-group-photo-caption">
+                AUSA Board of Directors & Committee Chairs — Annual Conference
+              </div>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* Committees */}
       <section className="committees-section">
         <div className="container container-wide">
@@ -132,9 +161,17 @@ export default function BoardAndCommittees() {
                   <div className="committee-chair">
                     <Users size={14} />
                     <span>
-                      <strong>Active Committee</strong> — Accepting volunteers
+                      <strong>Chair:</strong> {committee.chair}
                     </span>
                   </div>
+                  {committee.volunteers && (
+                    <div className="committee-chair committee-volunteers">
+                      <Users size={14} />
+                      <span>
+                        <strong>Volunteers:</strong> {committee.volunteers}
+                      </span>
+                    </div>
+                  )}
                 </div>
               </ScrollReveal>
             ))}

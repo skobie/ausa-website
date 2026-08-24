@@ -1,7 +1,7 @@
 import { Mail } from 'lucide-react';
 import './BoardMemberCard.css';
 
-export default function BoardMemberCard({ name, role, organization, email, image }) {
+export default function BoardMemberCard({ name, role, organization, email, image, imageStyle }) {
   const initials = name
     .split(' ')
     .map((n) => n[0])
@@ -12,7 +12,7 @@ export default function BoardMemberCard({ name, role, organization, email, image
       <div className="board-card-image">
         {image ? (
           <>
-            <img src={image} alt={name} />
+            <img src={image} alt={name} style={imageStyle} />
             <div className="board-card-image-overlay" />
           </>
         ) : (

@@ -32,6 +32,36 @@
   margin: var(--space-xl) auto 0;
 }
 
+/* Board Group Photo */
+.board-group-photo {
+  padding: 0 0 var(--space-3xl);
+  background: var(--color-white);
+}
+
+.board-group-photo-inner {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.board-group-photo-inner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 500px;
+}
+
+.board-group-photo-caption {
+  padding: var(--space-md) var(--space-lg);
+  background: var(--gradient-primary);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
 /* Committees Section */
 .committees-section {
   padding: var(--section-padding);
@@ -137,6 +167,11 @@
 .committee-chair strong {
   color: var(--color-text);
   font-weight: var(--weight-semibold);
+}
+
+.committee-volunteers {
+  border-top: none;
+  padding-top: var(--space-xs);
 }
 
 /* Responsive */

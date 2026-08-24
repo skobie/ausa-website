@@ -76,6 +76,24 @@
   margin-bottom: var(--space-2xl);
 }
 
+.conference-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.btn-outline-light:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+  color: var(--color-white);
+  background: rgba(255, 255, 255, 0.08);
+}
+
 .conference-details {
   display: grid;
   grid-template-columns: 1fr 1fr;

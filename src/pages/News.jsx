@@ -26,10 +26,10 @@ const events = [
   },
   {
     icon: <Shield size={24} />,
-    frequency: 'Quarterly',
+    frequency: 'Annual',
     title: 'Safety Roundtable',
     description:
-      'Quarterly meetings designed for safety managers and professionals to discuss trending safety topics, share incident lessons learned, and collaborate on innovative safety solutions.',
+      'Annual meetings designed for safety managers and professionals to discuss trending safety topics, share incident lessons learned, and collaborate on innovative safety solutions. Last held April 1–2, 2026.',
   },
   {
     icon: <BookOpen size={24} />,
@@ -102,7 +102,7 @@ export default function News() {
                     <Users size={20} />
                     <div>
                       <div className="meta-label">Audience</div>
-                      <div className="meta-value">Utility Safety Professionals</div>
+                      <div className="meta-value">Utility Professionals</div>
                     </div>
                   </div>
                 </div>
@@ -112,8 +112,8 @@ export default function News() {
             <ScrollReveal delay={0.15}>
               <div className="featured-event-image">
                 <img
-                  src={heroSunset}
-                  alt="Arizona sunset — AUSA Conference venue"
+                  src="/refwausalink/ADOSH Panel Discussion, Hudson, Murphy, Rucker, Randolph 2.jpg"
+                  alt="ADOSH Panel Discussion at AUSA Conference"
                 />
               </div>
             </ScrollReveal>

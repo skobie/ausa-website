@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { Zap } from 'lucide-react';
+import { Zap, ExternalLink } from 'lucide-react';
 import './Navbar.css';
 
 const navLinks = [
@@ -61,6 +61,16 @@ export default function Navbar() {
         </div>
 
         <div className="navbar-cta">
+          <a
+            href="https://www.eventsquid.com/event.cfm?event_id=32542&fromdash"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="navbar-register-btn"
+            id="navbar-register-btn"
+          >
+            Register
+            <ExternalLink size={13} />
+          </a>
           <Link to="/contact" className="navbar-cta-btn">
             <Zap size={14} style={{ marginRight: 6, display: 'inline' }} />
             Get Involved
@@ -90,6 +100,16 @@ export default function Navbar() {
             {link.label}
           </NavLink>
         ))}
+        <a
+          href="https://www.eventsquid.com/event.cfm?event_id=32542&fromdash"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="navbar-register-btn"
+          onClick={closeMobile}
+        >
+          Register
+          <ExternalLink size={13} />
+        </a>
         <Link to="/contact" className="navbar-cta-btn" onClick={closeMobile}>
           Get Involved
         </Link>

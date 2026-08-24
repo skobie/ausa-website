@@ -12,6 +12,7 @@ import {
   BookOpen,
   Megaphone,
   ArrowRight,
+  ExternalLink,
 } from 'lucide-react';
 import HeroSection from '../components/HeroSection';
 import ScrollReveal from '../components/ScrollReveal';
@@ -36,10 +37,10 @@ const newsItems = [
     icon: <Megaphone size={40} />,
   },
   {
-    date: 'Quarterly',
+    date: 'Annual',
     title: 'Safety Roundtable Meetings',
     description:
-      'Quarterly meetings where safety professionals from utilities across Arizona come together to share best practices and lessons learned.',
+      'Annual meetings where safety professionals from utilities across Arizona come together to share best practices and lessons learned. Last held April 1–2, 2026.',
     gradient: 'var(--gradient-accent)',
     icon: <BookOpen size={40} />,
   },
@@ -57,8 +58,8 @@ const partners = [
   { name: 'Salt River Project', color: '#1B5E20' },
   { name: 'Tucson Electric Power', color: '#0D47A1' },
   { name: 'Arizona Public Service', color: '#F57F17' },
-  { name: 'Southwest Gas', color: '#1565C0' },
   { name: 'UniSource Energy', color: '#4A148C' },
+  { name: 'Sulphur Springs Valley Electric Cooperative', color: '#2E7D32' },
 ];
 
 export default function Home() {
@@ -96,10 +97,22 @@ export default function Home() {
                   professionals from across Arizona for two days of presentations,
                   networking, and safety education.
                 </p>
-                <Link to="/news" className="btn btn-primary">
-                  Learn More
-                  <ArrowRight size={16} />
-                </Link>
+                <div className="conference-actions">
+                  <a
+                    href="https://www.eventsquid.com/event.cfm?event_id=32542&fromdash"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-primary"
+                    id="conference-register-btn"
+                  >
+                    Register Now
+                    <ExternalLink size={16} />
+                  </a>
+                  <Link to="/news" className="btn btn-outline btn-outline-light">
+                    Learn More
+                    <ArrowRight size={16} />
+                  </Link>
+                </div>
               </div>
             </ScrollReveal>
 
@@ -118,7 +131,7 @@ export default function Home() {
                 <div className="conference-detail-card">
                   <Users size={24} />
                   <h4>Attendees</h4>
-                  <p>100+ Utility Professionals</p>
+                  <p>Utility Professionals</p>
                 </div>
                 <div className="conference-detail-card">
                   <Target size={24} />
@@ -137,7 +150,7 @@ export default function Home() {
           <div className="about-preview-inner">
             <ScrollReveal>
               <div className="about-preview-image">
-                <img src={heroSunset} alt="Arizona sunset over utility infrastructure" />
+                <img src="/refwausalink/AUSA Board and Presentation Manny, Committee Chair.jpg" alt="AUSA Board members at the annual conference" />
                 <div className="about-preview-image-accent" />
               </div>
             </ScrollReveal>
@@ -147,9 +160,10 @@ export default function Home() {
                 <span className="badge badge-accent">About AUSA</span>
                 <h2>Empowering Arizona's Utility Industry</h2>
                 <p>
-                  AUSA is a collaborative association of utility companies throughout
-                  Arizona, dedicated to sharing safety practices, fostering
-                  professional development, and strengthening the utility community.
+                  AUSA is a collaborative association of electrical utility companies
+                  and contractors throughout Arizona, dedicated to sharing safety
+                  practices, fostering professional development, and strengthening
+                  the utility community.
                 </p>
 
                 <div className="about-preview-features">
@@ -168,7 +182,7 @@ export default function Home() {
                     </div>
                     <div className="about-feature-text">
                       <h5>Collaboration</h5>
-                      <p>Connecting professionals from electric, gas, and water utilities.</p>
+                      <p>Connecting electrical utility professionals and contractors across Arizona.</p>
                     </div>
                   </div>
                   <div className="about-feature">
