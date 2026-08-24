@@ -101,7 +101,7 @@ export default function Contact() {
                     <div>
                       <h5>Email</h5>
                       <p>
-                        <a href="mailto:heather.legg@srpnet.com">heather.legg@srpnet.com</a>
+                        <a href="mailto:AUSABoard@ausa1987.com">AUSABoard@ausa1987.com</a>
                       </p>
                     </div>
                   </div>

@@ -82,7 +82,7 @@ export default function Footer() {
             </div>
             <div className="footer-contact-item">
               <Mail size={16} />
-              <a href="mailto:heather.legg@srpnet.com">heather.legg@srpnet.com</a>
+              <a href="mailto:AUSABoard@ausa1987.com">AUSABoard@ausa1987.com</a>
             </div>
             <div className="footer-contact-item">
               <Phone size={16} />
