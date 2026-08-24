@@ -35,7 +35,7 @@ const boardMembers = [
     image: '/Mark Roll.avif',
   },
   {
-    name: 'Edwin (Ely) Yingling',
+    name: 'Ely Yingling',
     role: 'Secretary',
     organization: 'Arizona Public Service',
     image: '/Ely Yingling.avif',
