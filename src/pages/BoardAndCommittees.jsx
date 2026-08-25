@@ -17,7 +17,7 @@ const boardMembers = [
     name: 'Mike Mitts',
     role: 'Co-President',
     organization: 'Tucson Electric Power',
-    email: 'mmitts@tep.com',
+    email: 'mmitts@uesaz.com',
     image: '/mike mitts.avif',
     imageStyle: { objectFit: 'contain', backgroundColor: '#9a9a9a', objectPosition: 'center' },
   },
@@ -32,12 +32,14 @@ const boardMembers = [
     name: 'Mark Roll',
     role: 'Treasurer',
     organization: 'Sulphur Springs Valley Electric Cooperative',
+    email: 'mroll@ssvec.com',
     image: '/Mark Roll.avif',
   },
   {
     name: 'Ely Yingling',
     role: 'Secretary',
     organization: 'Arizona Public Service',
+    email: 'edwin.yinglingjr@aps.com',
     image: '/Ely Yingling.avif',
   },
 ];

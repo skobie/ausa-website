@@ -21,7 +21,7 @@ const contacts = [
   {
     name: 'Mike Mitts',
     organization: 'Tucson Electric Power',
-    email: 'mmitts@tep.com',
+    email: 'mmitts@uesaz.com',
     initials: 'MM',
   },
 ];
