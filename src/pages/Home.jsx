@@ -40,7 +40,7 @@ const newsItems = [
     date: 'Annual',
     title: 'Safety Roundtable Meetings',
     description:
-      'Annual meetings where safety professionals from utilities across Arizona come together to share best practices and lessons learned. Last held April 1–2, 2026.',
+      'Annual meetings where safety professionals from utilities across the area come together to share safety lessons learned, best practices, and innovative ideas. Last held April 1–2, 2026.',
     gradient: 'var(--gradient-accent)',
     icon: <BookOpen size={40} />,
   },
@@ -75,7 +75,7 @@ export default function Home() {
             <span style={{ color: 'var(--color-gold)' }}>Safety Association</span>
           </>
         }
-        subtitle="Bringing Arizona's utility professionals together to collaborate, share safety best practices, and build a stronger, safer industry."
+        subtitle="Bringing utility professionals from the Southwest together to collaborate, share safety lessons learned, best practices, and to build a stronger, safer industry."
         primaryAction={{ label: 'Explore AUSA', to: '/about' }}
         secondaryAction={{ label: 'Get Involved', to: '/contact' }}
         showScroll
@@ -94,7 +94,7 @@ export default function Home() {
                 <h2>AUSA 2026 Conference & Vendor Expo</h2>
                 <p>
                   The annual AUSA Conference and Vendor Expo brings together utility
-                  professionals from across Arizona for two days of presentations,
+                  professionals from across the area for two days of presentations,
                   networking, and safety education.
                 </p>
                 <div className="conference-actions">
@@ -158,12 +158,12 @@ export default function Home() {
             <ScrollReveal delay={0.15}>
               <div className="about-preview-content">
                 <span className="badge badge-accent">About AUSA</span>
-                <h2>Empowering Arizona's Utility Industry</h2>
+                <h2>Empowering the Southwest's Utility Industry</h2>
                 <p>
                   AUSA is a collaborative association of electrical utility companies
-                  and contractors throughout Arizona, dedicated to sharing safety
-                  practices, fostering professional development, and strengthening
-                  the utility community.
+                  and contractors throughout the Southwest, dedicated to sharing safety
+                  lessons learned, best practices, fostering professional development,
+                  and strengthening the utility community.
                 </p>
 
                 <div className="about-preview-features">
@@ -173,7 +173,7 @@ export default function Home() {
                     </div>
                     <div className="about-feature-text">
                       <h5>Safety First</h5>
-                      <p>Sharing best practices to keep utility workers safe across Arizona.</p>
+                      <p>Sharing safety lessons learned, best practices to keep utility workers safe across the Southwest.</p>
                     </div>
                   </div>
                   <div className="about-feature">
@@ -182,7 +182,7 @@ export default function Home() {
                     </div>
                     <div className="about-feature-text">
                       <h5>Collaboration</h5>
-                      <p>Connecting electrical utility professionals and contractors across Arizona.</p>
+                      <p>Connecting electrical utility professionals and contractors across the Southwest.</p>
                     </div>
                   </div>
                   <div className="about-feature">
@@ -266,7 +266,7 @@ export default function Home() {
       <section className="partners-section">
         <div className="container container-wide">
           <div className="partners-header">
-            <h6>Trusted by Arizona's Leading Utilities</h6>
+            <h6>Trusted by top Leading Utilities</h6>
           </div>
           <div className="partners-grid">
             {partners.map((partner, i) => (
@@ -291,7 +291,7 @@ export default function Home() {
             <div className="cta-content">
               <h2>Ready to Get Involved?</h2>
               <p>
-                Join AUSA and connect with Arizona's utility safety community.
+                Join AUSA and connect with the top utility safety community.
                 Together, we can build a safer, more resilient industry.
               </p>
               <div className="hero-actions">

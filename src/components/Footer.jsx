@@ -35,8 +35,8 @@ export default function Footer() {
               <span className="footer-logo-text">A<span>USA</span></span>
             </div>
             <p>
-              The American Utilities Safety Association empowers Arizona's electrical
-              utilities and contractors to collaborate, share safety best practices,
+              The American Utilities Safety Association empowers the Southwest's electrical
+              utilities and contractors to collaborate, share safety lessons learned, best practices,
               and build a stronger, safer industry together.
             </p>
             <div className="footer-social">

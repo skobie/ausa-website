@@ -82,7 +82,7 @@ export default function BoardAndCommittees() {
         backgroundImage={heroUtilities}
         badge="Leadership"
         title="Board & Committees"
-        subtitle="Meet the dedicated professionals who lead AUSA's mission to promote safety collaboration across Arizona's utility industry."
+        subtitle="Meet the dedicated professionals who lead AUSA's mission to promote safety collaboration across the Southwest's utility industry."
         mini
       />
 
@@ -96,7 +96,7 @@ export default function BoardAndCommittees() {
               <div className="divider divider-center" />
               <p>
                 Our board is composed of safety and operations leaders from
-                Arizona's top utility companies.
+                the Southwest's top utility companies.
               </p>
             </div>
           </ScrollReveal>

@@ -22,7 +22,7 @@ const events = [
     frequency: 'Annual',
     title: 'AUSA Conference & Vendor Expo',
     description:
-      'The flagship two-day event featuring presentations from industry leaders, a vendor expo showcasing the latest safety equipment and technology, and networking opportunities with utility professionals across Arizona.',
+      'The flagship two-day event featuring presentations from industry leaders, a vendor expo showcasing the latest safety equipment and technology, and networking opportunities with utility professionals across the Southwest.',
   },
   {
     icon: <Shield size={24} />,
@@ -71,9 +71,9 @@ export default function News() {
                 <h2>AUSA 2026 Conference & Vendor Expo</h2>
                 <p>
                   Announcing the dates for the 2026 AUSA Conference & Vendor Expo,
-                  the must-attend event for Arizona's utility safety community. Join
+                  the must-attend event for the Southwest's utility safety community. Join
                   us for two days of insightful presentations, hands-on vendor
-                  exhibits, and valuable networking with peers from across the state.
+                  exhibits, and valuable networking with peers from across the nation.
                 </p>
 
                 <div className="featured-event-meta">
@@ -131,7 +131,7 @@ export default function News() {
               <div className="divider divider-center divider-gold" />
               <p>
                 AUSA hosts a variety of programs throughout the year to support
-                Arizona's utility safety community.
+                the Southwest's utility safety community.
               </p>
             </div>
           </ScrollReveal>

@@ -65,7 +65,7 @@ export default function About() {
         backgroundImage={heroSunset}
         badge="About AUSA"
         title="Empowering Utilities to Engage"
-        subtitle="The American Utilities Safety Association is a non-profit organization dedicated to promoting safety collaboration among Arizona's utility companies."
+        subtitle="The American Utilities Safety Association is a non-profit organization dedicated to promoting safety collaboration among area utility companies."
         mini
       />
 
@@ -76,9 +76,9 @@ export default function About() {
             <ScrollReveal>
               <div className="about-mission-quote">
                 <blockquote>
-                  "Our mission is to provide a forum for Arizona's utility companies to
-                  share safety information, best practices, and innovative ideas that
-                  promote a culture of safety excellence."
+                  "Our mission is to provide a forum for area utility companies to
+                  share safety lessons learned, best practices, and innovative ideas
+                  that promote a culture of safety excellence."
                 </blockquote>
                 <cite>— AUSA Mission Statement</cite>
               </div>
@@ -90,7 +90,7 @@ export default function About() {
                 <p>
                   The American Utilities Safety Association (AUSA) is a collaborative
                   organization made up of electrical utility companies and
-                  contractors throughout Arizona. We bring together safety
+                  contractors throughout the Southwest. We bring together safety
                   professionals, operations leaders, and executives to share
                   knowledge, discuss challenges, and develop solutions.
                 </p>
@@ -150,7 +150,7 @@ export default function About() {
               <span className="badge badge-gold">Our Vision</span>
               <h2>Building a Safer Utility Industry</h2>
               <p>
-                We envision an Arizona where every utility company — regardless of
+                We envision a world where every utility company — regardless of
                 size or sector — has access to world-class safety resources,
                 collaborative networks, and the support they need to protect their
                 workers and communities.
@@ -182,7 +182,7 @@ export default function About() {
               <span className="badge badge-gold">In Action</span>
               <h2>Conference Highlights</h2>
               <div className="divider divider-center" />
-              <p>See our members in action at AUSA events throughout Arizona.</p>
+              <p>See our members in action at AUSA events throughout the area.</p>
             </div>
           </ScrollReveal>
 
