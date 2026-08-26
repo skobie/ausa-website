@@ -5,6 +5,7 @@ import './HeroSection.css';
 export default function HeroSection({
   backgroundImage,
   badge,
+  logoSrc,
   title,
   subtitle,
   primaryAction,
@@ -25,6 +26,14 @@ export default function HeroSection({
             <Zap size={14} />
             {badge}
           </div>
+        )}
+
+        {logoSrc && (
+          <img
+            src={logoSrc}
+            alt="AUSA Logo"
+            className="hero-logo"
+          />
         )}
 
         <h1>{title}</h1>

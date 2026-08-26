@@ -55,6 +55,16 @@
   backdrop-filter: blur(10px);
 }
 
+.hero-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-xl);
+  filter: drop-shadow(0 4px 24px rgba(0, 0, 0, 0.35));
+  animation: fadeInUp 1s ease 0.3s both;
+}
+
 .hero h1 {
   color: var(--color-white);
   margin-bottom: var(--space-lg);
@@ -112,6 +122,11 @@
 
   .hero-subtitle {
     font-size: var(--text-lg);
+  }
+
+  .hero-logo {
+    width: 90px;
+    height: 90px;
   }
 
   .hero-actions {

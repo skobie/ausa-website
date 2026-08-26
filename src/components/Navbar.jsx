@@ -36,15 +36,11 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? 'scrolled' : 'transparent'}`}>
       <div className="navbar-inner">
         <Link to="/" className="navbar-logo" onClick={closeMobile}>
-          <svg className="navbar-logo-icon" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="30" cy="30" r="28" stroke="white" strokeWidth="2.5" fill="none" opacity="0.2"/>
-            <path d="M30 8L18 44h6l2-6h8l2 6h6L30 8zm-2 24l2-8 2 8h-4z" fill="white"/>
-            <path d="M12 38c4-8 10-14 18-14s14 6 18 14" stroke="#D4A843" strokeWidth="2.5" fill="none" strokeLinecap="round"/>
-            <circle cx="30" cy="24" r="3" fill="#D4A843"/>
-          </svg>
-          <span className="navbar-logo-text">
-            A<span>USA</span>
-          </span>
+          <img
+            src="/AUSA-Logo.png"
+            alt="AUSA Logo"
+            className="navbar-logo-img"
+          />
         </Link>
 
         <div className="navbar-links">
@@ -89,6 +85,11 @@ export default function Navbar() {
       </div>
 
       <div className={`navbar-mobile ${mobileOpen ? 'open' : ''}`}>
+        <img
+          src="/AUSA-Logo.png"
+          alt="AUSA Logo"
+          className="navbar-mobile-logo"
+        />
         {navLinks.map((link) => (
           <NavLink
             key={link.to}

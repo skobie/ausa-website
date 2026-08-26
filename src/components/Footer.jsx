@@ -26,13 +26,11 @@ export default function Footer() {
           {/* About */}
           <div className="footer-about">
             <div className="footer-logo">
-              <svg width="40" height="40" viewBox="0 0 60 60" fill="none">
-                <circle cx="30" cy="30" r="28" stroke="white" strokeWidth="2.5" fill="none" opacity="0.2"/>
-                <path d="M30 8L18 44h6l2-6h8l2 6h6L30 8zm-2 24l2-8 2 8h-4z" fill="white"/>
-                <path d="M12 38c4-8 10-14 18-14s14 6 18 14" stroke="#D4A843" strokeWidth="2.5" fill="none" strokeLinecap="round"/>
-                <circle cx="30" cy="24" r="3" fill="#D4A843"/>
-              </svg>
-              <span className="footer-logo-text">A<span>USA</span></span>
+              <img
+                src="/AUSA-Logo.png"
+                alt="AUSA Logo"
+                className="footer-logo-img"
+              />
             </div>
             <p>
               The American Utilities Safety Association empowers the Southwest's electrical
