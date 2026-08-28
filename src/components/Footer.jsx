@@ -27,7 +27,7 @@ export default function Footer() {
           <div className="footer-about">
             <div className="footer-logo">
               <img
-                src="/AUSA-Logo.png"
+                src="/AUSA-Logo-Gold.png"
                 alt="AUSA Logo"
                 className="footer-logo-img"
               />

@@ -56,11 +56,12 @@
 }
 
 .hero-logo {
-  width: 120px;
-  height: 120px;
+  width: 300px;
+  height: 300px;
   object-fit: contain;
   border-radius: var(--radius-md);
-  margin-bottom: var(--space-xl);
+  margin: 0 auto var(--space-xl);
+  display: block;
   filter: drop-shadow(0 4px 24px rgba(0, 0, 0, 0.35));
   animation: fadeInUp 1s ease 0.3s both;
 }
@@ -125,8 +126,8 @@
   }
 
   .hero-logo {
-    width: 90px;
-    height: 90px;
+    width: 180px;
+    height: 180px;
   }
 
   .hero-actions {

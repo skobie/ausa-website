@@ -69,6 +69,7 @@ export default function Home() {
       <HeroSection
         backgroundImage={heroDesert}
         badge="Empowering Utilities to Engage"
+        logoSrc="/AUSA-Logo-Gold-NoBorder.png"
         title={
           <>
             American Utilities<br />

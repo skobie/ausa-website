@@ -37,7 +37,7 @@ export default function Navbar() {
       <div className="navbar-inner">
         <Link to="/" className="navbar-logo" onClick={closeMobile}>
           <img
-            src="/AUSA-Logo.png"
+            src="/AUSA-Logo-Gold.png"
             alt="AUSA Logo"
             className="navbar-logo-img"
           />
@@ -86,7 +86,7 @@ export default function Navbar() {
 
       <div className={`navbar-mobile ${mobileOpen ? 'open' : ''}`}>
         <img
-          src="/AUSA-Logo.png"
+          src="/AUSA-Logo-Gold.png"
           alt="AUSA Logo"
           className="navbar-mobile-logo"
         />
